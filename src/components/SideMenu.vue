@@ -1,0 +1,64 @@
+<template>
+  <v-navigation-drawer v-model="drawer" fixed clipped app width="200">
+    <name-card></name-card>
+    <v-list>
+      <v-list-tile v-for="item in items" :key="item.text" @click="$vuetify.goTo('#'+item.text)">
+        <v-list-tile-action>
+          <v-icon medium :color="item.color">{{ item.icon }}</v-icon>
+        </v-list-tile-action>
+        <v-list-tile-content>
+          <v-list-tile-title>{{ item.text }}</v-list-tile-title>
+        </v-list-tile-content>
+      </v-list-tile>
+      <!-- <v-subheader class="mt-3 grey--text text--darken-1">SUBSCRIPTIONS</v-subheader> -->
+      <!-- <v-list>
+        <v-list-tile v-for="item in items2" :key="item.text" avatar @click>
+          <v-list-tile-avatar>
+            <img :src="`https://randomuser.me/api/portraits/men/${item.picture}.jpg`" alt>
+          </v-list-tile-avatar>
+          <v-list-tile-title v-text="item.text"></v-list-tile-title>
+        </v-list-tile>
+      </v-list>-->
+      <!-- <v-list-tile class="mt-3" @click>
+        <v-list-tile-action>
+          <v-icon color="grey darken-1">add_circle_outline</v-icon>
+        </v-list-tile-action>
+        <v-list-tile-title class="grey--text text--darken-1">Browse Channels</v-list-tile-title>
+      </v-list-tile>-->
+      <!-- <v-list-tile @click>
+        <v-list-tile-action>
+          <v-icon color="grey darken-1">settings</v-icon>
+        </v-list-tile-action>
+        <v-list-tile-title class="grey--text text--darken-1">Manage Subscriptions</v-list-tile-title>
+      </v-list-tile>-->
+    </v-list>
+  </v-navigation-drawer>
+</template>
+
+<script>
+import NameCard from "./NameCard";
+export default {
+  components: {
+    NameCard
+  },
+  data: () => ({
+    items: [
+      { icon: "person", text: "About", color: "lime" },
+      { icon: "trending_up", text: "Experiences", color: "teal lighten-1" },
+      { icon: "business", text: "Projects", color: "purple lighten-3" },
+      { icon: "insert_chart", text: "Skills", color: "red darken-2" },
+      { icon: "school", text: "Education", color: "indigo lighten-2" },
+      { icon: "email", text: "Contact", color: "cyan" },
+      { icon: "list_alt", text: "Resume", color: "pink darken-1" }
+    ],
+    items2: [
+      { picture: 28, text: "Joseph" },
+      { picture: 38, text: "Apple" },
+      { picture: 48, text: "Xbox Ahoy" },
+      { picture: 58, text: "Nokia" },
+      { picture: 78, text: "MKBHD" }
+    ]
+  }),
+  props: ["drawer"]
+};
+</script>
