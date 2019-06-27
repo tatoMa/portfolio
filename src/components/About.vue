@@ -3,7 +3,11 @@
     <v-card-title primary-title class="pa-5">
       <div>
         <div class="mb-0 font-weight-medium display-2 mb-4" style="color:#CFD8DC">
-          <span class="red--text font-weight-bold">|</span> A Fledged Frond-End Web Developer
+          <span class="red--text font-weight-bold">|</span> A Fledged
+          <span class="red white--text font-weight-light">Full-Stack Web Developer</span> focusing on
+          <span
+            style="text-decoration: underline;  text-decoration-color: red;"
+          >Front-End</span>
         </div>
         <div
           class="headline font-weight-light mb-4"

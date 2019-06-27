@@ -4,7 +4,7 @@
       <v-card flat tile class="red white--text text-xs-center">
         <v-card-text>
           <v-btn v-for="icon in icons" :key="icon" class="mx-3 white" icon>
-            <v-icon size="24px">{{ icon }}</v-icon>
+            <img :src="require(`../assets/icons/${icon}.png`)" alt="Text" height="32">
           </v-btn>
         </v-card-text>
 
@@ -22,13 +22,7 @@
 <script>
 export default {
   data: () => ({
-    icons: [
-      'fab fa-facebook',
-      'fab fa-twitter',
-      'fab fa-google-plus',
-      'fab fa-linkedin',
-      'fab fa-instagram',
-    ],
-  }),
+    icons: ["facebook", "twitter", "gplus", "linkedin", "instagram", "email"]
+  })
 };
 </script>

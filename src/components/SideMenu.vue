@@ -1,86 +1,74 @@
 <template>
-  <v-navigation-drawer v-model="drawerSwticher" fixed clipped app absolute temporarywidth="200">
-    <name-card></name-card>
-    <v-list>
-      <v-list-tile
-        v-for="item in items"
-        :key="item.text"
-        @click="$vuetify.goTo('#'+item.text)"
-        class="my-2"
-        :class="{selected:section}"
-      >
-        <v-list-tile-action>
-          <v-icon medium :color="item.color">{{ item.icon }}</v-icon>
-        </v-list-tile-action>
-        <v-list-tile-content>
-          <v-list-tile-title>{{ item.text }}</v-list-tile-title>
-        </v-list-tile-content>
-      </v-list-tile>
-      <!-- <v-subheader class="mt-3 grey--text text--darken-1">SUBSCRIPTIONS</v-subheader> -->
-      <!-- <v-list>
-        <v-list-tile v-for="item in items2" :key="item.text" avatar @click>
-          <v-list-tile-avatar>
-            <img :src="`https://randomuser.me/api/portraits/men/${item.picture}.jpg`" alt>
-          </v-list-tile-avatar>
-          <v-list-tile-title v-text="item.text"></v-list-tile-title>
+  <div>
+    <!-- Side menu -->
+    <v-navigation-drawer v-model="drawer" fixed clipped app width="210">
+      <name-card></name-card>
+      <v-list>
+        <v-list-tile
+          v-for="item in items"
+          :key="item.text"
+          @click="$vuetify.goTo('#'+item.text)"
+          class="my-2"
+          :class="{selected:section}"
+        >
+          <v-list-tile-action>
+            <v-icon medium :color="item.color">{{ item.icon }}</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>{{ item.text }}</v-list-tile-title>
+          </v-list-tile-content>
         </v-list-tile>
-      </v-list>-->
-      <!-- <v-list-tile class="mt-3" @click>
-        <v-list-tile-action>
-          <v-icon color="grey darken-1">add_circle_outline</v-icon>
-        </v-list-tile-action>
-        <v-list-tile-title class="grey--text text--darken-1">Browse Channels</v-list-tile-title>
-      </v-list-tile>-->
-      <!-- <v-list-tile @click>
-        <v-list-tile-action>
-          <v-icon color="grey darken-1">settings</v-icon>
-        </v-list-tile-action>
-        <v-list-tile-title class="grey--text text--darken-1">Manage Subscriptions</v-list-tile-title>
-      </v-list-tile>-->
-    </v-list>
-  </v-navigation-drawer>
+        <!-- <v-divider></v-divider>
+        <v-list-tile class="mt-3">
+          <v-list-tile-title class="grey--text text--darken-1">Made with 💖 by Jason</v-list-tile-title>
+        </v-list-tile>-->
+      </v-list>
+    </v-navigation-drawer>
+
+    <!-- toolbar -->
+    <toobar @drawerSwitcher="onDrawerSwitcher"></toobar>
+  </div>
 </template>
 
 <script>
-import NameCard from './NameCard';
+import NameCard from "./NameCard";
+import Toobar from "../components/Toobar";
 
 export default {
   components: {
     NameCard,
+    Toobar
   },
-  props: ['drawer'],
+  props: ["drawer"],
   data: () => ({
     drawerSwticher: null,
+    drawer: null,
     items: [
-      { icon: 'person', text: 'About', color: 'lime' },
-      { icon: 'trending_up', text: 'Experiences', color: 'teal lighten-1' },
-      { icon: 'business', text: 'Projects', color: 'purple lighten-3' },
-      { icon: 'insert_chart', text: 'Skills', color: 'red darken-2' },
-      { icon: 'school', text: 'Education', color: 'indigo lighten-2' },
-      { icon: 'email', text: 'Contact', color: 'cyan' },
-      { icon: 'list_alt', text: 'Resume', color: 'pink darken-1' },
+      { icon: "person", text: "About", color: "lime" },
+      { icon: "trending_up", text: "Experiences", color: "teal lighten-1" },
+      { icon: "business", text: "Projects", color: "purple lighten-3" },
+      { icon: "insert_chart", text: "Skills", color: "red darken-2" },
+      { icon: "school", text: "Education", color: "indigo lighten-2" },
+      { icon: "email", text: "Contact", color: "cyan" },
+      { icon: "list_alt", text: "Resume", color: "pink darken-1" }
     ],
     items2: [
-      { picture: 28, text: 'Joseph' },
-      { picture: 38, text: 'Apple' },
-      { picture: 48, text: 'Xbox Ahoy' },
-      { picture: 58, text: 'Nokia' },
-      { picture: 78, text: 'MKBHD' },
+      { picture: 28, text: "Joseph" },
+      { picture: 38, text: "Apple" },
+      { picture: 48, text: "Xbox Ahoy" },
+      { picture: 58, text: "Nokia" },
+      { picture: 78, text: "MKBHD" }
     ],
-    section: false,
+    section: false
   }),
-  watch: {
-    // whenever question changes, this function will run
-    drawer(newQuestion, oldQuestion) {
-      console.log('changed');
-      this.drawerSwticher = this.drawer;
-
-      // this.answer = 'Waiting for you to stop typing...'
-      // this.debouncedGetAnswer()
-    },
-  },
+  methods: {
+    onDrawerSwitcher() {
+      this.drawer = !this.drawer;
+    }
+  }
 };
 </script>
+
 <style scoped>
 .selected {
   border-left: 3px solid red;
