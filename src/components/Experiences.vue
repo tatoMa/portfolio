@@ -1,6 +1,6 @@
 <template>
   <v-card class="my-3" color="grey darken-2">
-    <v-img src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" height="120px"></v-img>
+    <v-img :src="require('../assets/img/landing_05.jpg')" height="120px"></v-img>
 
     <v-card-title primary-title>
       <div>

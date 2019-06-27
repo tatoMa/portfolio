@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Side menu -->
-    <v-navigation-drawer v-model="drawer" fixed clipped app width="200">
+    <v-navigation-drawer v-model="drawer" fixed clipped app width="210">
       <name-card></name-card>
       <v-list>
         <v-list-tile
@@ -87,25 +87,7 @@
             <gapper sectionText="Skills"></gapper>
             <skills></skills>
             <gapper sectionText="Education"></gapper>
-            <v-layout row>
-              <v-flex xs12>
-                <v-card>
-                  <v-container fluid grid-list-sm>
-                    <v-layout row wrap>
-                      <v-flex xs10 offset-xs1>
-                        <experiences></experiences>
-                      </v-flex>
-                      <v-flex xs10 offset-xs1>
-                        <experiences></experiences>
-                      </v-flex>
-                      <v-flex xs10 offset-xs1>
-                        <experiences></experiences>
-                      </v-flex>
-                    </v-layout>
-                  </v-container>
-                </v-card>
-              </v-flex>
-            </v-layout>
+            <educations></educations>
             <footer-section></footer-section>
           </v-flex>
         </v-layout>
@@ -124,6 +106,7 @@ import Experiences from "../components/Experiences";
 import Projects from "../components/Projects";
 import NameCard from "../components/NameCard";
 import Skills from "../components/Skills";
+import Educations from "../components/Educations";
 import FooterSection from "../components/Footer";
 
 export default {
@@ -137,7 +120,8 @@ export default {
     Experiences,
     Projects,
     FooterSection,
-    Skills
+    Skills,
+    Educations
   },
   data: () => ({
     drawer: null,
