@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app dark id="inspire">
     <router-view/>
   </v-app>
 </template>

@@ -1,8 +1,14 @@
 <template>
-  <v-navigation-drawer v-model="drawer" fixed clipped app width="200">
+  <v-navigation-drawer v-model="drawerSwticher" fixed clipped app absolute temporarywidth="200">
     <name-card></name-card>
     <v-list>
-      <v-list-tile v-for="item in items" :key="item.text" @click="$vuetify.goTo('#'+item.text)">
+      <v-list-tile
+        v-for="item in items"
+        :key="item.text"
+        @click="$vuetify.goTo('#'+item.text)"
+        class="my-2"
+        :class="{selected:section}"
+      >
         <v-list-tile-action>
           <v-icon medium :color="item.color">{{ item.icon }}</v-icon>
         </v-list-tile-action>
@@ -41,7 +47,9 @@ export default {
   components: {
     NameCard
   },
+  props: ["drawer"],
   data: () => ({
+    drawerSwticher: null,
     items: [
       { icon: "person", text: "About", color: "lime" },
       { icon: "trending_up", text: "Experiences", color: "teal lighten-1" },
@@ -57,8 +65,24 @@ export default {
       { picture: 48, text: "Xbox Ahoy" },
       { picture: 58, text: "Nokia" },
       { picture: 78, text: "MKBHD" }
-    ]
+    ],
+    section: false
   }),
-  props: ["drawer"]
+  watch: {
+    // whenever question changes, this function will run
+    drawer: function(newQuestion, oldQuestion) {
+      console.log("changed");
+      this.drawerSwticher = this.drawer;
+
+      // this.answer = 'Waiting for you to stop typing...'
+      // this.debouncedGetAnswer()
+    }
+  }
 };
 </script>
+<style scoped>
+.selected {
+  border-left: 3px solid red;
+  background-color: rgba(0, 0, 0, 0.206);
+}
+</style>

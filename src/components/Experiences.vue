@@ -1,28 +1,28 @@
 <template>
-  <v-card class="ma-5">
-    <v-img src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" height="200px"></v-img>
+  <v-card class="my-3" color="grey darken-2">
+    <v-img src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" height="120px"></v-img>
 
     <v-card-title primary-title>
       <div>
-        <div class="headline">Top western road trips</div>
-        <span class="grey--text">1,000 miles of wonder</span>
+        <div class="display-1">Experience</div>
+        <br>
+        <div class="subheading">
+          SaaS platform that enables enterprise companies to build, run, and measure their positive impact campaigns
+          DEVELOP PRODUCT
+          <br>
+          <br>Contribute core features across entire stack (20k+ lines of code, 250+ pulls)
+          Lead front-end development, creating and documenting app-wide design system
+          Oversee transition from page-based styles to modular component styles
+          Guide best practices around accessible, semantic UI/UX
+          Tools: Ruby, Rails, PostgreSQL // React, JS, jQuery // Sass // HTML, JSX, Haml
+          ACCOMPLISHMENTS
+          <br>
+          <br>Dramatically increased speed of UI development using atomic, scalable CSS
+          Built tool to convert HRIS data into user accounts to simplify onboarding
+          Implemented inline @tagging feature to increase app share-ability
+        </div>
       </div>
     </v-card-title>
-
-    <v-card-actions>
-      <v-btn flat>Share</v-btn>
-      <v-btn flat color="purple">Explore</v-btn>
-      <v-spacer></v-spacer>
-      <v-btn icon @click="show = !show">
-        <v-icon>{{ show ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</v-icon>
-      </v-btn>
-    </v-card-actions>
-
-    <v-slide-y-transition>
-      <v-card-text
-        v-show="show"
-      >I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.</v-card-text>
-    </v-slide-y-transition>
   </v-card>
 </template>
 
