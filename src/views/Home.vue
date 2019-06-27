@@ -97,17 +97,17 @@
 </template>
 
 <script>
-import SideMenu from "../components/SideMenu";
-import Toobar from "../components/Toobar";
-import Carousels from "../components/Carousels";
-import Gapper from "../components/Gapper";
-import About from "../components/About";
-import Experiences from "../components/Experiences";
-import Projects from "../components/Projects";
-import NameCard from "../components/NameCard";
-import Skills from "../components/Skills";
-import Educations from "../components/Educations";
-import FooterSection from "../components/Footer";
+import SideMenu from '../components/SideMenu';
+import Toobar from '../components/Toobar';
+import Carousels from '../components/Carousels';
+import Gapper from '../components/Gapper';
+import About from '../components/About';
+import Experiences from '../components/Experiences';
+import Projects from '../components/Projects';
+import NameCard from '../components/NameCard';
+import Skills from '../components/Skills';
+import Educations from '../components/Educations';
+import FooterSection from '../components/Footer';
 
 export default {
   components: {
@@ -121,33 +121,33 @@ export default {
     Projects,
     FooterSection,
     Skills,
-    Educations
+    Educations,
   },
   data: () => ({
     drawer: null,
     items: [
-      { icon: "person", text: "About", color: "lime" },
-      { icon: "trending_up", text: "Experiences", color: "teal lighten-1" },
-      { icon: "business", text: "Projects", color: "purple lighten-3" },
-      { icon: "insert_chart", text: "Skills", color: "red darken-2" },
-      { icon: "school", text: "Education", color: "indigo lighten-2" },
-      { icon: "email", text: "Contact", color: "cyan" },
-      { icon: "list_alt", text: "Resume", color: "pink darken-1" }
+      { icon: 'person', text: 'About', color: 'lime' },
+      { icon: 'trending_up', text: 'Experiences', color: 'teal lighten-1' },
+      { icon: 'business', text: 'Projects', color: 'purple lighten-3' },
+      { icon: 'insert_chart', text: 'Skills', color: 'red darken-2' },
+      { icon: 'school', text: 'Education', color: 'indigo lighten-2' },
+      { icon: 'email', text: 'Contact', color: 'cyan' },
+      { icon: 'list_alt', text: 'Resume', color: 'pink darken-1' },
     ],
     items2: [
-      { picture: 28, text: "Joseph" },
-      { picture: 38, text: "Apple" },
-      { picture: 48, text: "Xbox Ahoy" },
-      { picture: 58, text: "Nokia" },
-      { picture: 78, text: "MKBHD" }
+      { picture: 28, text: 'Joseph' },
+      { picture: 38, text: 'Apple' },
+      { picture: 48, text: 'Xbox Ahoy' },
+      { picture: 58, text: 'Nokia' },
+      { picture: 78, text: 'MKBHD' },
     ],
-    section: false
+    section: false,
   }),
   methods: {
     onDrawerSwitcher() {
       this.drawer = !this.drawer;
-    }
-  }
+    },
+  },
 };
 </script>
 

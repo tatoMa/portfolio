@@ -11,6 +11,6 @@
 </template>
 <script>
 export default {
-  props: ["sectionText"]
+  props: ['sectionText'],
 };
 </script>

@@ -42,42 +42,43 @@
 </template>
 
 <script>
-import NameCard from "./NameCard";
+import NameCard from './NameCard';
+
 export default {
   components: {
-    NameCard
+    NameCard,
   },
-  props: ["drawer"],
+  props: ['drawer'],
   data: () => ({
     drawerSwticher: null,
     items: [
-      { icon: "person", text: "About", color: "lime" },
-      { icon: "trending_up", text: "Experiences", color: "teal lighten-1" },
-      { icon: "business", text: "Projects", color: "purple lighten-3" },
-      { icon: "insert_chart", text: "Skills", color: "red darken-2" },
-      { icon: "school", text: "Education", color: "indigo lighten-2" },
-      { icon: "email", text: "Contact", color: "cyan" },
-      { icon: "list_alt", text: "Resume", color: "pink darken-1" }
+      { icon: 'person', text: 'About', color: 'lime' },
+      { icon: 'trending_up', text: 'Experiences', color: 'teal lighten-1' },
+      { icon: 'business', text: 'Projects', color: 'purple lighten-3' },
+      { icon: 'insert_chart', text: 'Skills', color: 'red darken-2' },
+      { icon: 'school', text: 'Education', color: 'indigo lighten-2' },
+      { icon: 'email', text: 'Contact', color: 'cyan' },
+      { icon: 'list_alt', text: 'Resume', color: 'pink darken-1' },
     ],
     items2: [
-      { picture: 28, text: "Joseph" },
-      { picture: 38, text: "Apple" },
-      { picture: 48, text: "Xbox Ahoy" },
-      { picture: 58, text: "Nokia" },
-      { picture: 78, text: "MKBHD" }
+      { picture: 28, text: 'Joseph' },
+      { picture: 38, text: 'Apple' },
+      { picture: 48, text: 'Xbox Ahoy' },
+      { picture: 58, text: 'Nokia' },
+      { picture: 78, text: 'MKBHD' },
     ],
-    section: false
+    section: false,
   }),
   watch: {
     // whenever question changes, this function will run
-    drawer: function(newQuestion, oldQuestion) {
-      console.log("changed");
+    drawer(newQuestion, oldQuestion) {
+      console.log('changed');
       this.drawerSwticher = this.drawer;
 
       // this.answer = 'Waiting for you to stop typing...'
       // this.debouncedGetAnswer()
-    }
-  }
+    },
+  },
 };
 </script>
 <style scoped>
