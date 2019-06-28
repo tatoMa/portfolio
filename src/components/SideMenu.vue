@@ -2,14 +2,16 @@
   <div>
     <!-- Side menu -->
     <v-navigation-drawer v-model="drawer" fixed clipped app width="210">
+      <!-- <v-navigation-drawer v-model="drawer" fixed clipped app width="210" v-scroll="handleScroll"> -->
       <name-card></name-card>
+      <!-- <div ref="About">about</div> -->
       <v-list>
         <v-list-tile
           v-for="item in items"
           :key="item.text"
           @click="$vuetify.goTo('#'+item.text)"
           class="my-2"
-          :class="{selected:section}"
+          active-class="red--text"
         >
           <v-list-tile-action>
             <v-icon medium :color="item.color">{{ item.icon }}</v-icon>
@@ -64,6 +66,13 @@ export default {
     onDrawerSwitcher() {
       this.drawer = !this.drawer;
     }
+    // handleScroll() {
+    //   console.log(window.scrollY);
+    //   if (window.scrollY > 250) {
+    //     this.currentSection = "About";
+    //     this.$refs.About.classList.add("red");
+    //   }
+    // }
   }
 };
 </script>

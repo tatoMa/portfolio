@@ -14,7 +14,6 @@
           <v-flex>
             <!-- carousels section -->
             <carousels></carousels>
-
             <!-- about section -->
             <gapper sectionText="About"></gapper>
             <about></about>
@@ -70,6 +69,12 @@ export default {
     FooterSection,
     Skills,
     Educations
+  },
+  data() {
+    return {
+      currentSection: null
+    };
   }
 };
 </script>
+

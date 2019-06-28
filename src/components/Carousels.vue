@@ -1,6 +1,6 @@
 <template>
   <v-card>
-    <v-img height="100vh" :src="require('../assets/img/landing_05.jpg')">
+    <v-img height="100vh" :src="require('../assets/img/landing.jpg')">
       <v-container fill-height fluid>
         <v-layout fill-height>
           <v-flex flexbox class="hidden-xs-only">

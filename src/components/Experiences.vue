@@ -3,27 +3,44 @@
     <v-layout column class="hidden-xs-only">
       <!-- hidden for mobilephone -->
       <v-card class="mx-5 my-4" v-for="(exp, index) in experiences" :key="index" xs12>
-        <v-img :src="require('../assets/img/landing_05.jpg')" height="120px"></v-img>
+        <!-- <v-img :src="require('../assets/img/landing.jpg')" height="40px"></v-img> -->
         <v-card-title primary-title>
-          <div style="width: 100%">
-            <div class="display-1">{{exp.title}}</div>
-            <br>
-            <div class="headline" v-for="(subtitle, index) in exp.subtitles" :key="index">
-              {{subtitle.name}}
-              <v-list v-for="(detail,index) in subtitle.details" :key="index" dense>
-                <v-subheader class="subheading font-weight-regular">- {{ detail }}</v-subheader>
-
+          <v-layout column>
+            <v-layout row>
+              <div class="display-1 mb-2 red--text">{{exp.title}}</div>
+              <v-spacer></v-spacer>
+              <div class="headline font-weight-light">{{exp.time}}</div>
+            </v-layout>
+            <v-divider class="mt-2"></v-divider>
+            <v-layout column>
+              <div
+                class="headline mt-3 mb-1 font-weight-light"
+                v-for="(subtitle, index) in exp.subtitles"
+                :key="index"
+              >
+                {{subtitle.name}}
+                <!-- <v-list v-for="(detail,index) in subtitle.details" :key="index" dense>
+                <v-subheader class="subheading font-weight-regular">- {{ detail }}</v-subheader>-->
+                <ul class="mt-2">
+                  <li
+                    class="subheading font-weight-medium"
+                    v-for="(detail,index) in subtitle.details"
+                    :key="index"
+                  >{{ detail }}</li>
+                </ul>
                 <!-- <v-divider></v-divider> -->
-              </v-list>
-            </div>
-          </div>
+                <!-- </v-list> -->
+              </div>
+            </v-layout>
+          </v-layout>
         </v-card-title>
       </v-card>
     </v-layout>
+
+    <!-- showing for mobilephone -->
     <v-layout column class="hidden-sm-and-up">
-      <!-- showing for mobilephone -->
       <v-card class="my-2" v-for="i in 3" :key="i">
-        <v-img :src="require('../assets/img/landing_05.jpg')" height="70px"></v-img>
+        <v-img :src="require('../assets/img/landing.jpg')" height="70px"></v-img>
         <v-card-title primary-title>
           <div>
             <div class="display-1">Experience</div>
@@ -56,44 +73,68 @@ export default {
     return {
       experiences: [
         {
-          title: "experience 1",
+          title: "Full-Stack Development",
           time: "19/04/2018",
           subtitles: [
             {
-              name: "front-end",
-              details: ["front-end1", "front-end1", "front-end1"]
+              name: "Front-End",
+              details: [
+                "Making front-end UI components",
+                "Design the UI components by Adoby XD",
+                "Review the performance of the APP"
+              ]
             },
             {
-              name: "front-end2",
-              details: ["front-end2", "front-end2", "front-end2"]
+              name: "Back-End",
+              details: [
+                "Node.js skeleton",
+                "Authentication by OAuth2 with Google",
+                "Design back-end RESTful API"
+              ]
             }
           ]
         },
         {
-          title: "experience 2",
+          title: "Full-Stack Development",
           time: "19/04/2018",
           subtitles: [
             {
-              name: "front-end",
-              details: ["front-end1", "front-end1", "front-end1"]
+              name: "Front-End",
+              details: [
+                "Making front-end UI components",
+                "Design the UI components by Adoby XD",
+                "Review the performance of the APP"
+              ]
             },
             {
-              name: "front-end2",
-              details: ["front-end2", "front-end2", "front-end2"]
+              name: "Back-End",
+              details: [
+                "Node.js skeleton",
+                "Authentication by OAuth2 with Google",
+                "Design back-end RESTful API"
+              ]
             }
           ]
         },
         {
-          title: "experience 3",
+          title: "Full-Stack Development",
           time: "19/04/2018",
           subtitles: [
             {
-              name: "front-end",
-              details: ["front-end1", "front-end1", "front-end1"]
+              name: "Front-End",
+              details: [
+                "Making front-end UI components",
+                "Design the UI components by Adoby XD",
+                "Review the performance of the APP"
+              ]
             },
             {
-              name: "front-end2",
-              details: ["front-end2", "front-end2", "front-end2"]
+              name: "Back-End",
+              details: [
+                "Node.js skeleton",
+                "Authentication by OAuth2 with Google",
+                "Design back-end RESTful API"
+              ]
             }
           ]
         }
