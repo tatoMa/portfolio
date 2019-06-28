@@ -1,9 +1,13 @@
 <template>
-  <div>
+  <div
+    :style="{ backgroundImage: 'url(' + require('@/assets/img/bg.jpg') + ')' }"
+    style="background-size: cover;background-attachment: fixed;"
+  >
     <!-- sidemenu and navbar -->
     <side-menu></side-menu>
 
     <!-- Main container -->
+
     <v-content>
       <v-container fill-height fluid class="pa-0 ma-0">
         <v-layout>

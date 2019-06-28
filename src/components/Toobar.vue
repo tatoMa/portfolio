@@ -3,8 +3,8 @@
     <v-toolbar-side-icon @click.stop="$emit('drawerSwitcher')"></v-toolbar-side-icon>
     <v-toolbar-title class="mr-5 align-center">
       <v-layout>
-        <v-icon large class="mr-3">portrait</v-icon>
-        <span class="title my-auto">Portfolio & Blog</span>
+        <v-icon large class="mr-3 hidden-xs-only">portrait</v-icon>
+        <span class="title my-auto">Jason Ma | Portfolio</span>
       </v-layout>
     </v-toolbar-title>
     <v-spacer></v-spacer>

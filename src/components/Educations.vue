@@ -1,11 +1,24 @@
 <template>
   <v-layout align-center justify-center row>
     <v-flex xs11>
-      <v-card class="my-5" color="grey darken-2" v-for="i in 2" :key="i">
+      <!-- <v-card class="my-5" color="grey darken-2" v-for="i in 2" :key="i"> -->
+      <v-card class="my-5">
         <v-card-title primary-title>
           <v-layout align-center>
-            <img :src="require(`../assets/icons/csu.png`)" alt="Text" height="70" class="mx-4">
-            <span class="headline">Bachelor of Information Technology (Software Engineer)</span>
+            <img
+              :src="require(`../assets/icons/csu.png`)"
+              alt="Text"
+              height="70"
+              class="mx-4 hidden-xs-only"
+            >
+            <img
+              :src="require(`../assets/icons/csu.png`)"
+              alt="Text"
+              height="40"
+              class="mr-2 mb-2 hidden-sm-and-up"
+            >
+            <span class="headline hidden-xs-only mb-3">Bachelor of Information Technology</span>
+            <span class="title hidden-sm-and-up mb-3">Bachelor of Information Technology</span>
           </v-layout>
           <div class="subheading">
             <v-divider></v-divider>

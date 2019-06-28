@@ -39,7 +39,6 @@ export default {
     NameCard,
     Toobar
   },
-  props: ["drawer"],
   data: () => ({
     drawerSwticher: null,
     drawer: null,
