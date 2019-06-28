@@ -33,39 +33,39 @@
 </template>
 
 <script>
-import NameCard from "./NameCard";
-import Toobar from "../components/Toobar";
+import NameCard from './NameCard';
+import Toobar from './Toobar';
 
 export default {
   components: {
     NameCard,
-    Toobar
+    Toobar,
   },
   data: () => ({
     drawerSwticher: null,
     drawer: null,
     items: [
-      { icon: "person", text: "About", color: "lime" },
-      { icon: "trending_up", text: "Experiences", color: "teal lighten-1" },
-      { icon: "business", text: "Projects", color: "purple lighten-3" },
-      { icon: "insert_chart", text: "Skills", color: "red darken-2" },
-      { icon: "school", text: "Education", color: "indigo lighten-2" },
-      { icon: "email", text: "Contact", color: "cyan" },
-      { icon: "list_alt", text: "Resume", color: "pink darken-1" }
+      { icon: 'person', text: 'About', color: 'lime' },
+      { icon: 'trending_up', text: 'Experiences', color: 'teal lighten-1' },
+      { icon: 'business', text: 'Projects', color: 'purple lighten-3' },
+      { icon: 'insert_chart', text: 'Skills', color: 'red darken-2' },
+      { icon: 'school', text: 'Education', color: 'indigo lighten-2' },
+      { icon: 'email', text: 'Contact', color: 'cyan' },
+      { icon: 'list_alt', text: 'Resume', color: 'pink darken-1' },
     ],
     items2: [
-      { picture: 28, text: "Joseph" },
-      { picture: 38, text: "Apple" },
-      { picture: 48, text: "Xbox Ahoy" },
-      { picture: 58, text: "Nokia" },
-      { picture: 78, text: "MKBHD" }
+      { picture: 28, text: 'Joseph' },
+      { picture: 38, text: 'Apple' },
+      { picture: 48, text: 'Xbox Ahoy' },
+      { picture: 58, text: 'Nokia' },
+      { picture: 78, text: 'MKBHD' },
     ],
-    section: false
+    section: false,
   }),
   methods: {
     onDrawerSwitcher() {
       this.drawer = !this.drawer;
-    }
+    },
     // handleScroll() {
     //   console.log(window.scrollY);
     //   if (window.scrollY > 250) {
@@ -73,7 +73,7 @@ export default {
     //     this.$refs.About.classList.add("red");
     //   }
     // }
-  }
+  },
 };
 </script>
 

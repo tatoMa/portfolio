@@ -73,73 +73,73 @@ export default {
     return {
       experiences: [
         {
-          title: "Full-Stack Development",
-          time: "19/04/2018",
+          title: 'Full-Stack Development',
+          time: '19/04/2018',
           subtitles: [
             {
-              name: "Front-End",
+              name: 'Front-End',
               details: [
-                "Making front-end UI components",
-                "Design the UI components by Adoby XD",
-                "Review the performance of the APP"
-              ]
+                'Making front-end UI components',
+                'Design the UI components by Adoby XD',
+                'Review the performance of the APP',
+              ],
             },
             {
-              name: "Back-End",
+              name: 'Back-End',
               details: [
-                "Node.js skeleton",
-                "Authentication by OAuth2 with Google",
-                "Design back-end RESTful API"
-              ]
-            }
-          ]
+                'Node.js skeleton',
+                'Authentication by OAuth2 with Google',
+                'Design back-end RESTful API',
+              ],
+            },
+          ],
         },
         {
-          title: "Full-Stack Development",
-          time: "19/04/2018",
+          title: 'Full-Stack Development',
+          time: '19/04/2018',
           subtitles: [
             {
-              name: "Front-End",
+              name: 'Front-End',
               details: [
-                "Making front-end UI components",
-                "Design the UI components by Adoby XD",
-                "Review the performance of the APP"
-              ]
+                'Making front-end UI components',
+                'Design the UI components by Adoby XD',
+                'Review the performance of the APP',
+              ],
             },
             {
-              name: "Back-End",
+              name: 'Back-End',
               details: [
-                "Node.js skeleton",
-                "Authentication by OAuth2 with Google",
-                "Design back-end RESTful API"
-              ]
-            }
-          ]
+                'Node.js skeleton',
+                'Authentication by OAuth2 with Google',
+                'Design back-end RESTful API',
+              ],
+            },
+          ],
         },
         {
-          title: "Full-Stack Development",
-          time: "19/04/2018",
+          title: 'Full-Stack Development',
+          time: '19/04/2018',
           subtitles: [
             {
-              name: "Front-End",
+              name: 'Front-End',
               details: [
-                "Making front-end UI components",
-                "Design the UI components by Adoby XD",
-                "Review the performance of the APP"
-              ]
+                'Making front-end UI components',
+                'Design the UI components by Adoby XD',
+                'Review the performance of the APP',
+              ],
             },
             {
-              name: "Back-End",
+              name: 'Back-End',
               details: [
-                "Node.js skeleton",
-                "Authentication by OAuth2 with Google",
-                "Design back-end RESTful API"
-              ]
-            }
-          ]
-        }
-      ]
+                'Node.js skeleton',
+                'Authentication by OAuth2 with Google',
+                'Design back-end RESTful API',
+              ],
+            },
+          ],
+        },
+      ],
     };
-  }
+  },
 };
 </script>

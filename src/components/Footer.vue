@@ -28,7 +28,7 @@
 <script>
 export default {
   data: () => ({
-    icons: ["facebook", "twitter", "gplus", "linkedin", "instagram", "email"]
-  })
+    icons: ['facebook', 'twitter', 'gplus', 'linkedin', 'instagram', 'email'],
+  }),
 };
 </script>
