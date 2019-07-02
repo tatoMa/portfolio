@@ -1,7 +1,7 @@
 <template>
   <div
     :style="{ backgroundImage: 'url(' + require('@/assets/img/bg.jpg') + ')' }"
-    style="background-size: cover;background-attachment: fixed;"
+    style="background-repeat: repeat;background-attachment: fixed;"
   >
     <!-- sidemenu and navbar -->
     <side-menu></side-menu>
@@ -44,23 +44,22 @@
 </template>
 
 <script>
-import SideMenu from '../components/SideMenu';
-import Toobar from '../components/Toobar';
-import Carousels from '../components/Carousels';
-import Gapper from '../components/Gapper';
-import About from '../components/About';
-import Experiences from '../components/Experiences';
-import Projects from '../components/Projects';
-import NameCard from '../components/NameCard';
-import Skills from '../components/Skills';
-import Educations from '../components/Educations';
-import FooterSection from '../components/Footer';
+import SideMenu from '../components/SideMenu.vue';
+// import Toobar from "../components/Toobar.vue";
+import Carousels from '../components/Carousels.vue';
+import Gapper from '../components/Gapper.vue';
+import About from '../components/About.vue';
+import Experiences from '../components/Experiences.vue';
+import Projects from '../components/Projects.vue';
+// import NameCard from "../components/NameCard";
+import Skills from '../components/Skills.vue';
+import Educations from '../components/Educations.vue';
+import FooterSection from '../components/Footer.vue';
 
 export default {
   components: {
-    NameCard,
     SideMenu,
-    Toobar,
+    // Toobar,
     Carousels,
     Gapper,
     About,

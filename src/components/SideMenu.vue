@@ -2,7 +2,14 @@
   <div>
     <!-- Side menu -->
     <v-navigation-drawer v-model="drawer" fixed clipped app width="210">
-      <!-- <v-navigation-drawer v-model="drawer" fixed clipped app width="210" v-scroll="handleScroll"> -->
+      <!-- <v-navigation-drawer
+      v-model="drawer"
+      fixed
+      clipped
+      app
+      width="210"
+      v-scroll="handleScroll"
+      >-->
       <name-card></name-card>
       <!-- <div ref="About">about</div> -->
       <v-list>
@@ -22,7 +29,10 @@
         </v-list-tile>
         <!-- <v-divider></v-divider>
         <v-list-tile class="mt-3">
-          <v-list-tile-title class="grey--text text--darken-1">Made with 💖 by Jason</v-list-tile-title>
+          <v-list-tile-title
+          class="grey--text
+          text--darken-1"
+          >Made with 💖 by Jason</v-list-tile-title>
         </v-list-tile>-->
       </v-list>
     </v-navigation-drawer>
@@ -33,8 +43,8 @@
 </template>
 
 <script>
-import NameCard from './NameCard';
-import Toobar from './Toobar';
+import NameCard from './elements/NameCard.vue';
+import Toobar from './Toobar.vue';
 
 export default {
   components: {
