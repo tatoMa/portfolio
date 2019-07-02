@@ -1,46 +1,109 @@
 <template>
-  <v-layout row wrap class="ma-4">
-    <v-flex xs12 sm10 offset-sm1 offset-md0 md6 
-    v-for="(project,index) in projects" 
-    :key="index"
-    data-aos="fade-up"
-    data-aos-offset="100"
-    data-aos-easing="ease-in-sine">
-      <v-card class="ma-3" height="300">
-        <v-layout row fill-height>
-          <v-flex xs5>
-            <v-img
-              :src="require(`../assets/img/${project.img}.jpg`)"
-              height="300px"
-              class="hidden-xs-and-down"
-            ></v-img>
-          </v-flex>
-          <v-flex xs7>
-            <v-layout align-center justify-space-between column fill-height>
-              <v-card-title primary-title>
-                <div>
-                  <div class="headline red--text">{{project.title}}</div>
-                  <div class="body-1 font-weight-light">{{project.subTitle}}</div>
-                  <ul class="mt-3">
-                    <li
-                      class="subheading font-weight-regular"
-                      v-for="(detail,index) in project.details"
-                      :key="index"
-                    >{{ detail }}</li>
-                  </ul>
-                </div>
-              </v-card-title>
+  <div>
+    <!-- responsive for larger screen -->
+    <v-layout row wrap class="ma-4 hidden-xs-only">
+      <v-flex
+        xs12
+        sm10
+        offset-sm1
+        offset-md0
+        md6
+        v-for="(project,index) in projects"
+        :key="index"
+        data-aos="fade-up"
+        data-aos-offset="70"
+        data-aos-easing="ease-in-sine"
+      >
+        <v-card class="ma-3" min-height="300">
+          <v-layout row fill-height>
+            <v-flex xs5>
+              <v-img
+                :src="require(`../assets/img/${project.img}.jpg`)"
+                height="300px"
+                class="hidden-xs-and-down"
+              ></v-img>
+            </v-flex>
+            <v-flex xs7>
+              <v-layout align-center justify-space-between column fill-height>
+                <v-card-title primary-title>
+                  <div>
+                    <div class="headline red--text">{{project.title}}</div>
+                    <div class="body-1 font-weight-light">{{project.subTitle}}</div>
+                    <ul class="mt-3">
+                      <li
+                        class="subheading font-weight-regular"
+                        v-for="(detail,index) in project.details"
+                        :key="index"
+                      >{{ detail }}</li>
+                    </ul>
+                  </div>
+                </v-card-title>
 
-              <v-card-actions class="mb-2">
-                <v-btn outline :href="project.link" color="red" class="mx-2">Browse</v-btn>
-                <v-btn outline :href="project.github" color="blue" class="mx-2">Github</v-btn>
-              </v-card-actions>
-            </v-layout>
-          </v-flex>
-        </v-layout>
-      </v-card>
-    </v-flex>
-  </v-layout>
+                <v-card-actions class="mb-2">
+                  <v-btn outline :href="project.link" color="red" class="mx-2">Browse</v-btn>
+                  <v-btn outline :href="project.github" color="blue" class="mx-2">Github</v-btn>
+                </v-card-actions>
+              </v-layout>
+            </v-flex>
+          </v-layout>
+        </v-card>
+      </v-flex>
+    </v-layout>
+
+    <!-- responsive for mobile -->
+    <v-layout row wrap class="ma-2 hidden-sm-and-up">
+      <v-flex
+        xs12
+        v-for="(project,index) in projects"
+        :key="index"
+        data-aos="fade-up"
+        data-aos-offset="70"
+        data-aos-easing="ease-in-sine"
+      >
+        <v-card class="mt-1 mb-2" min-height="300">
+          <v-layout row fill-height align-center align-content-center>
+            <v-flex xs4 ml-2>
+              <v-img :src="require(`../assets/img/${project.img}.jpg`)" height="300px"></v-img>
+            </v-flex>
+            <v-flex xs8>
+              <v-layout align-center justify-space-between column fill-height>
+                <v-card-title primary-title>
+                  <div>
+                    <div class="headline red--text">{{project.title}}</div>
+                    <div class="body-1 font-weight-light">{{project.subTitle}}</div>
+                    <ul class="mt-3">
+                      <li
+                        class="subheading font-weight-regular"
+                        v-for="(detail,index) in project.details"
+                        :key="index"
+                      >{{ detail }}</li>
+                    </ul>
+                  </div>
+                </v-card-title>
+
+                <v-card-actions class="mb-2">
+                  <v-btn
+                    outline
+                    :href="project.link"
+                    color="red"
+                    class="mx-2"
+                    target="_blank"
+                  >Browse</v-btn>
+                  <v-btn
+                    outline
+                    :href="project.github"
+                    color="blue"
+                    class="mx-2"
+                    target="_blank"
+                  >Github</v-btn>
+                </v-card-actions>
+              </v-layout>
+            </v-flex>
+          </v-layout>
+        </v-card>
+      </v-flex>
+    </v-layout>
+  </div>
 </template>
 
 <script>

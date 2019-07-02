@@ -1,8 +1,8 @@
 <template>
   <v-layout align-center justify-center row>
-    <v-flex xs11 data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+    <v-flex xs11 data-aos="fade-right" data-aos-offset="70" data-aos-easing="ease-in-sine">
       <!-- <v-card class="my-5" color="grey darken-2" v-for="i in 2" :key="i"> -->
-      <v-card class="my-5">
+      <v-card class="my-3">
         <v-card-title primary-title>
           <v-layout align-center>
             <img

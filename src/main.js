@@ -1,16 +1,16 @@
 import Vue from 'vue';
 import './plugins/vuetify';
+import AOS from 'aos';
 import App from './App.vue';
 import router from './router';
 import store from './store';
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import 'aos/dist/aos.css';
 
 Vue.config.productionTip = false;
 
 new Vue({
   created() {
-    AOS.init()
+    AOS.init();
   },
   router,
   store,

@@ -6,10 +6,10 @@
           <v-flex flexbox class="hidden-xs-only">
             <div class="display-2 font-weight-light ma-3 black--text">
               Performance is crucial.
-              <div class="mt-3">
+              <div class="mt-3 display-2 font-weight-light">
                 Every
                 <span class="display-2 font-weight-light red white--text">3 more seconds</span>
-                <span class="display-2 font-weight-light"> of loading, you lose </span>
+                of loading, you lose
                 <span
                   class="display-2 font-weight-light"
                   style="text-decoration: underline;  text-decoration-color: red;"
@@ -18,15 +18,16 @@
             </div>
           </v-flex>
           <v-flex flexbox class="hidden-sm-and-up">
-            <div class="display-1 font-weight-light ma-3 black--text">
+            <div class="display-1 font-weight-light black--text">
               Performance is crucial.
               <div class="mt-3">
                 Every
-                <span class="display-1 font-weight-light red white--text">3 seconds</span> worth
+                <span class="display-1 font-weight-light red white--text">3 more seconds</span>
+                <span class="display-1 font-weight-light">of loading, you lose</span>
                 <span
                   class="display-1 font-weight-light"
                   style="text-decoration: underline;  text-decoration-color: red;"
-                >the half of you users.</span>
+                >the half of users.</span>
               </div>
             </div>
           </v-flex>
