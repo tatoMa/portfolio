@@ -81,67 +81,69 @@ export default {
     return {
       experiences: [
         {
-          title: 'Full-Stack Development',
-          time: '19/04/2018',
+          title: 'Freelancer of full-stack web development',
+          time: '2016 - current',
           subtitles: [
             {
               name: 'Front-End',
               details: [
-                'Making front-end UI components',
-                'Design the UI components by Adoby XD',
-                'Review the performance of the APP',
+                'Modern front-end framework creating SPA (Vue, React and etc.)',
+                'State management system manage state and data (Vuex, Redux and etc.)',
+                'Webpack, NPM and tools for auto scripting',
+                'Responsive design UI library such as Bootstrap, material, bulma',
+                'Creating custome plugin or utility modules using on the other components',
               ],
             },
             {
               name: 'Back-End',
               details: [
-                'Node.js skeleton',
-                'Authentication by OAuth2 with Google',
-                'Design back-end RESTful API',
+                'Creating back-end using node and express',
+                'Practiced with middleware and common useful packages',
+                'Fledged MongoDB and mongoose skills',
+                'Authentication and encrypt for login system',
+              ],
+            },
+          ]
+        },
+        {
+          title: 'Mobilise IT Pty. Ltd, Melbourne',
+          time: 'Jun 2015 – Sep 2015',
+          subtitles: [
+            {
+              name: 'Multiplatform Application Developer',
+              details: [
+                'Making front-end UI components for a govement project called NSW E-health',
+                'Application improvement and enhancement of performance and user experience',
+                'Real mobile and computer device testing',
+              ],
+            },
+            
+          ],
+        },
+        {
+          title: 'Banacola Pty. Ltd, Sydney',
+          time: 'Nov 2014 – Jun 2015',
+          subtitles: [
+            {
+              name: 'Game Developer',
+              details: [
+                'Unity 3D engine with c#',
+                'Create object and module for game using',
+                'Testing on real mobile device',
               ],
             },
           ],
         },
         {
-          title: 'Full-Stack Development',
-          time: '19/04/2018',
+          title: 'ABC Media Company, 370 Pitt St., Sydney',
+          time: 'Feb 2013 – May 2013',
           subtitles: [
             {
-              name: 'Front-End',
+              name: 'Website Designer and Administration Assistant',
               details: [
-                'Making front-end UI components',
-                'Design the UI components by Adoby XD',
-                'Review the performance of the APP',
-              ],
-            },
-            {
-              name: 'Back-End',
-              details: [
-                'Node.js skeleton',
-                'Authentication by OAuth2 with Google',
-                'Design back-end RESTful API',
-              ],
-            },
-          ],
-        },
-        {
-          title: 'Full-Stack Development',
-          time: '19/04/2018',
-          subtitles: [
-            {
-              name: 'Front-End',
-              details: [
-                'Making front-end UI components',
-                'Design the UI components by Adoby XD',
-                'Review the performance of the APP',
-              ],
-            },
-            {
-              name: 'Back-End',
-              details: [
-                'Node.js skeleton',
-                'Authentication by OAuth2 with Google',
-                'Design back-end RESTful API',
+                'IT support, graphic design and information editor for the company website and social media press',
+                'Designed advertisement video for the event that was sponsored by this company',
+                'Daily website and social media post maintenance',
               ],
             },
           ],

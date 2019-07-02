@@ -7,11 +7,11 @@
             <img :src="require(`../assets/icons/${icon}.png`)" alt="Text" height="32">
           </v-btn>
         </v-card-text>
-        <v-card-text class="hidden-sm-and-up">
+        <!-- <v-card-text class="hidden-sm-and-up">
           <v-btn v-for="icon in icons" :key="icon" class="mx-2" icon color="white">
             <img :src="require(`../assets/icons/${icon}.png`)" alt="Text" height="32">
           </v-btn>
-        </v-card-text>
+        </v-card-text> -->
 
         <v-divider></v-divider>
 

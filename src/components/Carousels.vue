@@ -8,11 +8,12 @@
               Performance is crucial.
               <div class="mt-3">
                 Every
-                <span class="display-2 font-weight-light red white--text">3 seconds</span> worth
+                <span class="display-2 font-weight-light red white--text">3 more seconds</span>
+                <span class="display-2 font-weight-light"> of loading, you lose </span>
                 <span
                   class="display-2 font-weight-light"
                   style="text-decoration: underline;  text-decoration-color: red;"
-                >the half of you users.</span>
+                >the half of users.</span>
               </div>
             </div>
           </v-flex>

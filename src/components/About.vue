@@ -1,7 +1,9 @@
 <template>
-  <div data-aos="fade-right"
-     data-aos-offset="100"
-     data-aos-easing="ease-in-sine">
+  <div 
+  data-aos="fade-right"
+  data-aos-offset="100"
+  data-aos-easing="ease-in-sine"
+  >
     <!-- media query hidden for mobilephone -->
     <v-card class="ma-5 hidden-xs-only">
       <v-card-title primary-title class="pa-5">
@@ -14,13 +16,13 @@
           >Front-End</span>
         </div>
         <div class="headline font-weight-light mb-4">
-          Seeking the path of keeping myself in the exact track of web development,
-          self taught JavaScript full stack web development for 3+ years,
-          as a person who eagerly shows styles and designs to audiences by using
-          the latest also popular technology. Over 10 years of programming,
-          design and creative experience makes me wanting to challenge myself.
+          Seeking the path of keeping myself on the right track of web development,
+          self taught mordern JavaScript full stack web development experiences for 3+ years,
+          as a person who eagerly shows App and design to audiences by using
+          the latest technology. Over 10 years of programming,
+          design and creation experiences make me want to challenge myself.
           Hence, examining the performance of web App becomes to my focus currently
-          as it requires substantial related knowledge about UX, web programming and the Internet.
+          as it requires substantial related knowledge about UX, web programming and the Internet itself.
         </div>
         <div class="red--text headline">
           <span class="white--text font-weight-bold mr-2">Current Focus:</span>
