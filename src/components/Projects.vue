@@ -1,6 +1,11 @@
 <template>
   <v-layout row wrap class="ma-4">
-    <v-flex xs12 sm10 offset-sm1 offset-md0 md6 v-for="(project,index) in projects" :key="index">
+    <v-flex xs12 sm10 offset-sm1 offset-md0 md6 
+    v-for="(project,index) in projects" 
+    :key="index"
+    data-aos="fade-up"
+    data-aos-offset="100"
+    data-aos-easing="ease-in-sine">
       <v-card class="ma-3" height="300">
         <v-layout row fill-height>
           <v-flex xs5>

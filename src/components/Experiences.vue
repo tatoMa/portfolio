@@ -2,7 +2,14 @@
   <div>
     <v-layout column class="hidden-xs-only">
       <!-- hidden for mobilephone -->
-      <v-card class="mx-5 my-4" v-for="(exp, index) in experiences" :key="index" xs12>
+      <v-card 
+      class="mx-5 my-4" 
+      v-for="(exp, index) in experiences" 
+      :key="index" 
+      xs12
+      data-aos="fade-right"
+      data-aos-offset="100"
+      data-aos-easing="ease-in-sine">
         <!-- <v-img :src="require('../assets/img/landing.jpg')" height="40px"></v-img> -->
         <v-card-title primary-title>
           <v-layout column>

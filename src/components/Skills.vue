@@ -23,7 +23,10 @@
 
         <v-divider></v-divider>
         <v-layout row wrap>
-          <v-flex xs6 sm3 md2 v-for="(detail, index) in skill.details" class="pa-4" :key="index">
+          <v-flex xs6 sm3 md2 v-for="(detail, index) in skill.details" 
+          class="pa-4" 
+          :key="index"
+          data-aos="zoom-in">
             <div class="text-xs-center">
               <img
                 class="hidden-xs-only"

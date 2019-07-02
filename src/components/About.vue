@@ -1,5 +1,7 @@
 <template>
-  <div>
+  <div data-aos="fade-right"
+     data-aos-offset="100"
+     data-aos-easing="ease-in-sine">
     <!-- media query hidden for mobilephone -->
     <v-card class="ma-5 hidden-xs-only">
       <v-card-title primary-title class="pa-5">
