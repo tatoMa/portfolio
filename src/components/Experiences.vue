@@ -106,7 +106,7 @@ export default {
                 "State management system manage state and data (Vuex, Redux and etc.)",
                 "Webpack, NPM and tools for auto scripting",
                 "Responsive design UI library such as Bootstrap, material, bulma",
-                "Creating custome plugin or utility modules using on the other components"
+                "Creating custom plugin or utility modules using on the other components"
               ]
             },
             {
@@ -127,7 +127,7 @@ export default {
             {
               name: "Multiplatform Application Developer",
               details: [
-                "Making front-end UI components for a govement project called NSW E-health",
+                "Making front-end UI components for a goverment project called NSW E-health",
                 "Application improvement and enhancement of performance and user experience",
                 "Real mobile and computer device testing"
               ]

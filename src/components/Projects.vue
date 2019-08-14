@@ -40,8 +40,20 @@
                 </v-card-title>
 
                 <v-card-actions class="mb-2">
-                  <v-btn outline :href="project.link" color="red" class="mx-2">Browse</v-btn>
-                  <v-btn outline :href="project.github" color="blue" class="mx-2">Github</v-btn>
+                  <v-btn
+                    outline
+                    :href="project.link"
+                    color="red"
+                    class="mx-2"
+                    target="_blank"
+                  >Browse</v-btn>
+                  <v-btn
+                    outline
+                    :href="project.github"
+                    color="blue"
+                    class="mx-2"
+                    target="_blank"
+                  >Github</v-btn>
                 </v-card-actions>
               </v-layout>
             </v-flex>

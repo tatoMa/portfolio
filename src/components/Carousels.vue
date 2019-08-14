@@ -13,7 +13,7 @@
                 <span
                   class="display-2 font-weight-light"
                   style="text-decoration: underline;  text-decoration-color: red;"
-                >the half of users.</span>
+                >half of your users.</span>
               </div>
             </div>
           </v-flex>
